@@ -49,6 +49,10 @@ function mathOperation(a, b, str) {
             return div(a, b);
         case "Умножение":
             return mul(a, b);
+        default: 
+            console.log('Ошибка');
+            return undefined;
+            
     }
 }
 
@@ -58,6 +62,7 @@ console.log(mathOperation(3, 2, "Умножение"));
 console.log(mathOperation(10, 2, "Деление"));
 */
 
+/*
 function power(val, pow) {
     if (pow == 1) {
         return val;
@@ -67,3 +72,13 @@ function power(val, pow) {
 }
 
 console.log(power(2, 3));
+*/
+
+function factorial(n) {
+    if (n == 1) {
+        return n
+    }
+
+}
+
+console.log (factorial(4));

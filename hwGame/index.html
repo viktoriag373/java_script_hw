@@ -9,18 +9,22 @@
 </head>
 <body>
     <div id="game">
-        <input type="text" class="answer" placeholder="Введите Ваш ответ">
-        <a href="#" class="button">Ответить</a>
-        <div class="wrapper">
-                <p>Статус игры:</p>
-                <p>Колличество попыток:</p>
-                <p>Числа, которые Вы вводили:</p>
+        <h1>Угадай число</h1>
+        <h2>Описание игры:</h2>
+        <p class="description"> в этой игре компьютер будет загадывать число.
+            Ваша задача - отгадать это число.
+            Ниже будут показаны статус игры, колличество попыток и ходы, которые вы сделали.
+        </p>
+        <div class="wrap_input">
+            <input type="text" class="answer" placeholder="Введите Ваш ответ">
+            <input type="submit" class="button" value="Ответить">
         </div>
+        
         <div class="wrap">
-
+            <p>Статус игры:</p>
             <div class="status"></div> 
-            <div class="log"></div>    
-            <div class="input"> </div>
+            <p>Колличество попыток и числа, которые Вы вводили:</p>
+            <div class="log input size"></div>    
 
         </div>
     </div>

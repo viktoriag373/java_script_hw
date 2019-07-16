@@ -1,36 +1,67 @@
 body {
+    font-family: "Lifehack";
+    font-weight: bold;
     margin: 0;
     padding: 0; 
-    background: #488368;
-    font: 15px;
+    background: url(img/bg-body.png) no-repeat 50% 0 #0e0e0e;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
 #game {
     margin: 50px;
+    background: #034a5f;
+    padding: 10px 60px;
 }
 
-.wrap, .wrapper{
-    display: flex;
-    justify-content: space-around;
+h1 {
+    color: aquamarine;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-bottom: 60px;
+}
+
+.description {
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: aquamarine;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.wrap_input {
+    text-align: center;
+}
+
+.size {
+    width: 350px;
+    height: auto;
 }
 
 .answer {
-    height: 32px;
+    height: 35px;
     width: 350px;
-    margin-bottom: 20px;
+    border-radius: 15px;
     margin-right: 10px;
-    margin-left: 50px;
 }
 
 .button{
+    font-family: "Lifehack";
+    font-weight: bold;
+    background: bottom;
     color: #fff;
     border: 1px solid #fff;
     text-decoration: none;
-    padding: 10px;
-    border-radius: 2px;
+    height: 41px;
+    border-radius: 15px;
     text-transform: uppercase;
     font-weight: bold;
-    width: 50px;
+    width: 150px;
     margin: 0 auto;
 }
 
@@ -44,18 +75,14 @@ body {
 
 .log {
     background: #234567;
-    width: 350px;
-    height: 100px;
     color: aqua;
 }
 
 .input {
     background: #093472;
-    width: 350px;
-    height: 100px;
     color: rgb(158, 255, 255);
 }
 
 p {
-    color: #fff;
+    color: rgb(196, 196, 196);
 }

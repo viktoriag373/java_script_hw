@@ -65,12 +65,16 @@ h2 {
     margin: 0 auto;
 }
 
+.outline {
+    outline: none;
+}
+
 .status {
     background: #198543;
     margin: 20px 0;
     color: aquamarine;
     width: 350px;
-    height: 50px;
+    height: auto;
 }
 
 .log {

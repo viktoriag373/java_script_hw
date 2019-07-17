@@ -6,6 +6,7 @@ body {
     background: url(img/bg-body.png) no-repeat 50% 0 #0e0e0e;
     font-size: 20px;
     box-sizing: border-box;
+    word-spacing: 5px;
 }
 
 #game {
@@ -38,11 +39,6 @@ h2 {
     text-align: center;
 }
 
-.size {
-    width: 350px;
-    height: auto;
-}
-
 .answer {
     height: 35px;
     width: 350px;
@@ -51,7 +47,7 @@ h2 {
 }
 
 .button{
-    font-family: "Lifehack";
+   /* font-family: "Lifehack";*/
     font-weight: bold;
     background: bottom;
     color: #fff;
@@ -61,8 +57,8 @@ h2 {
     border-radius: 15px;
     text-transform: uppercase;
     font-weight: bold;
-    width: 150px;
-    margin: 0 auto;
+    width: 200px;
+    margin-right: 10px;
 }
 
 .outline {
@@ -78,8 +74,11 @@ h2 {
 }
 
 .log {
+    width: 350px;
+    height: auto;
     background: #234567;
     color: aqua;
+    
 }
 
 .input {

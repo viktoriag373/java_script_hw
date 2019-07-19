@@ -2,34 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?ver=14">
+    <script src="script.js?ver=9"></script>
     <title>Document</title>
 </head>
 <body>
-    <div id="game">
+    <div class="container">
         <h1>Угадай число</h1>
-        <h2>Описание игры:</h2>
-        <p class="description"> в этой игре компьютер будет загадывать число.
-            Ваша задача - отгадать это число.
-            Ниже будут показаны статус игры, колличество попыток и ходы, которые вы сделали.
-        </p>
+        <div class="rules_game">
+            <h2 class="rules_game_heading">Описание игры:</h2>
+            <p class="rules_game_description"> В этой игре компьютер будет загадывать число от 1 до 20.
+                Ваша задача - отгадать это число.
+                Ниже будут показаны статус игры, колличество попыток и ходы, которые вы сделали.
+            </p>
+        </div>    
         <div class="wrap_input">
             <input type="text" class="answer outline" placeholder="Введите Ваш ответ">
             <input type="submit" class="button outline button_answer" value="Ответить">
             <input type="submit" class="button outline button_start_stop" value="Закончить игру">
         </div>
-        
-        <div class="wrap">
-            <p>Статус игры:</p>
-            <div class="status"></div> 
-            <p>Колличество попыток и числа, которые Вы вводили:</p>
-            <div class="log">
-            </div>    
+        <div class="wrap_status">
+            <div>
+                <p class="status_game">Статус игры:</p>
+                <div class="status"></div>                 
+            </div>
+            <div>
+                <p class="attempt">Колличество попыток и числа, которые Вы вводили:</p>
+                <div class="log"></div>    
+            </div>
 
-        </div>
+        </div>    
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

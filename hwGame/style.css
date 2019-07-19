@@ -1,25 +1,114 @@
-body {
-    font-family: "Lifehack";
-    font-weight: bold;
+ /* @font-face {
+    font-family: 'VeryBary-Pro';
+    src: url(fonts/VeryBary-Pro.otf)
+}  */
+
+
+* {
     margin: 0;
     padding: 0; 
-    background: url(img/bg-body.png) no-repeat 50% 0 #0e0e0e;
-    font-size: 20px;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Marck Script';
+    overflow-x: hidden;
+    color: blanchedalmond;
+    font-weight: bold;
+    background: url(img/bg-body.png) no-repeat 70% #0e0e0e;
+    font-size: 22px;
     box-sizing: border-box;
     word-spacing: 5px;
 }
 
-#game {
-    margin: 50px;
+.container {
+    margin: 0 auto;
+    width: 970px;
     background: #034a5f;
-    padding: 10px 60px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rules_game, .wrap_input {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.wrap_input, .wrap_status {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rules_game_heading {
+    margin-bottom: 10px;
+}
+
+.rules_game_description {
+    text-align: justify;
+}
+
+.wrap_input input {
+    height: 40px; 
+    width: 170px; 
+    border-radius: 15px;
+}
+
+.answer {
+   
+    border: none;
+    text-align: center;
+}
+
+.button {
+    color: blanchedalmond;
+    background: bottom;
+    border: 1px solid blanchedalmond;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button_answer {
+    background: 
+}
+
+.outline {
+    outline: none;
+}
+
+.wrap_status {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.status_game, .attempt {
+    margin-bottom: 15px;
+} 
+
+.status {
+    width: 370px;
+}
+
+.log {
+    background: #01919b;
+}
+
+
+
+/* #game {
+    margin-left: 50px; 
 }
 
 h1 {
     color: aquamarine;
     text-align: center;
     font-size: 40px;
-    padding-top: 50px;
     margin-bottom: 60px;
 }
 
@@ -41,14 +130,14 @@ h2 {
 
 .answer {
     height: 35px;
-    width: 350px;
+    width: 200px;
     border-radius: 15px;
     margin-right: 10px;
 }
 
 .button{
    /* font-family: "Lifehack";*/
-    font-weight: bold;
+    /* font-weight: bold;
     background: bottom;
     color: #fff;
     border: 1px solid #fff;
@@ -89,3 +178,71 @@ h2 {
 p {
     color: rgb(196, 196, 196);
 }
+
+
+
+ */
+
+
+
+/* =================== Responsive ====================*/
+
+/* 992px - 1200px */
+/*@media screen and (max-width: 1200px) {
+    .container {
+        width: 950px;
+    }
+}*/
+
+/* 768px - 992px */
+/*@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .wrap_input input {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+}*/
+
+/* 576px - 768px */
+/*@media screen and (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+
+    .description {
+        width: 300px;
+    }
+}*/
+
+/* 320px - 576px */
+/*@media screen and (max-width: 576px) {
+
+    body {
+        font-size: 14px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .game {
+        margin: 0;
+    }
+
+    h1 {
+
+        text-align-last: left;
+    }
+    
+    .description {
+        width: 200px;
+    }
+
+    .status, .log, .wrap p{
+        width: 200px;
+    }
+    
+} */

@@ -1,3 +1,4 @@
+'use strict'
 window.onload = function() {
     var inputAnswer = document.querySelector('.answer'); 
     var buttonAnswer = document.querySelector('.button_answer');  
@@ -33,7 +34,7 @@ window.onload = function() {
     function starNewGame() {
         log.innerText = '';
         count = 0;
-        randomNumber = random(1, 5);
+        randomNumber = random(1, 20);
         console.log(randomNumber);
         
         textStatus.style.backgroundColor = '#198543';
@@ -58,7 +59,7 @@ window.onload = function() {
 
     function endGame() {
         setInputEnabled(false);
-        buttonStartStop.value = 'Новая игра'
+        buttonStartStop.value = 'Новая игра';
         buttonStartStop.onclick = starNewGame;
     }
 

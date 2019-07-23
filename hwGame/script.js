@@ -41,9 +41,25 @@ window.onload = function() {
         textStatus.innerText = 'Компьютер загадал число';
         setInputEnabled(true);
 
-        inputAnswer.onkeypress = function(event) {   //передается событие
-            if (event.code === 'Enter') {
+        inputAnswer.onkeydown = function(event) {
+           // if (isNaN(event.key) && event.keyCode != 8 && event.keyCode != 13) {
+           //     event.preventDefault();
+            //}
+        }
+
+        inputAnswer.onbeforeinput = function(event) {   //передается событие
+
+            console.log(event);
+            //inputAnswer.value = event.code + ' ' + event.keyCode;
+            //event.preventDefault();
+            if (event.keyCode === 13) {
+                event.target.blur();
                 checkGame();
+            } else {
+                //if (event.key < '0' || event.key > '9') {
+               if (isNaN(event.key && event.keyCode != 8)) {
+                    event.preventDefault();
+                }
             }
         }
 

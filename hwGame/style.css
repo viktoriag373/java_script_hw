@@ -10,7 +10,7 @@
 }
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
     color: blanchedalmond;
     font-weight: bold;
-    background: url(img/bg-body.png) no-repeat 70% #0e0e0e;
+    background: url(img/bg-body.png) no-repeat 70% 0 #0e0e0e;
     font-size: 22px;
     box-sizing: border-box;
     word-spacing: 5px;
@@ -54,6 +54,13 @@ h1 {
     text-align: justify;
 }
 
+/* .random {
+    margin-bottom: 60px;
+    display: flex;
+}
+ */
+
+
 .wrap_input input {
     height: 40px; 
     width: 170px; 
@@ -74,9 +81,9 @@ h1 {
     font-weight: bold;
 }
 
-.button_answer {
+/* .button_answer {
     background: 
-}
+} */
 
 .outline {
     outline: none;
@@ -87,7 +94,7 @@ h1 {
     padding-bottom: 30px;
 }
 
-.status_game, .attempt {
+.status_game_heading, .attempt_heading {
     margin-bottom: 15px;
 } 
 
@@ -97,6 +104,82 @@ h1 {
 
 .log {
     background: #01919b;
+}
+
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 730px;
+    }
+
+    .wrap_status {
+        display: block;
+    }
+
+    .status_game_heading, .attempt_heading {
+        font-size: 30px;
+    }
+    
+
+    .status, .log {
+        width: auto;
+        margin-top: 20px;
+    }
+
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 550px;
+    }
+
+    .rules_game {
+        text-align: center;
+        width: auto;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .wrap_input input {
+        margin-bottom: 15px;
+        width: 300px;
+    }
+
+    .wrap_input, input {
+        display: block;
+        margin: auto;
+    }
+
+    .wrap_input {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }   
+
+    .wrap_input input {
+        margin-bottom: 15px;
+        width: 250px;
+    }
+
+    .status_game_heading, .attempt_heading {
+        font-size: 25px;
+    }
 }
 
 
